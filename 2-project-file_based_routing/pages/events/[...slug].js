@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Slug = () => {
+const FilteredEventsPage = () => {
    return (
-      <div>Slug</div>
+      <div>FilteredEventsPage</div>
    )
 }
 
-export default Slug
+export default FilteredEventsPage
