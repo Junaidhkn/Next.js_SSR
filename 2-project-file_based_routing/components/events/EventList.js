@@ -1,4 +1,5 @@
 import React from 'react';
+import EventItem from './EventItem.js';
 
 const EventList = (props) => {
 	const { events } = props;
@@ -6,7 +7,12 @@ const EventList = (props) => {
 	return (
 		<ul>
 			{events.map((event) => {
-				return <li>{event.title}</li>;
+				return (
+					<EventItem
+						key={event.id}
+						event={event}
+					/>
+				);
 			})}
 		</ul>
 	);
