@@ -1,7 +1,15 @@
 import React from 'react';
 
 const EventList = (props) => {
-	return <div>EventList</div>;
+	const { events } = props;
+
+	return (
+		<ul>
+			{events.map((event) => {
+				return <li>{event.title}</li>;
+			})}
+		</ul>
+	);
 };
 
 export default EventList;
