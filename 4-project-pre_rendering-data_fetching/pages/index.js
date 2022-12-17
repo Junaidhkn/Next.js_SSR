@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HopePage = ( props ) => {
+const HomePage = ( props ) => {
   return (
     <div>
       <h1>{props.username}</h1>
@@ -11,7 +11,7 @@ const HopePage = ( props ) => {
 
 
 
-export default HopePage
+export default HomePage
 
 
 export const getServerSideProps = async () => {
