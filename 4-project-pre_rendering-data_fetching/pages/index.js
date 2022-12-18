@@ -1,10 +1,9 @@
 import React from 'react'
 
-const HomePage = ( props ) => {
+const HomePage = () => {
   return (
     <div>
-      <h1>{props.username}</h1>
-      <p>{props.desc}</p>
+      <h1>Junaid Hassan khan</h1>
     </div>
   )
 }
@@ -12,13 +11,3 @@ const HomePage = ( props ) => {
 
 
 export default HomePage
-
-
-export const getServerSideProps = async () => {
-  return {
-    props: {
-      username: 'Junaid',
-      desc: 'ewerw erwerwer werwerwer wer wer eriwerkjlwer weirwe rniwjer  ojweklrwer wnerwer erwerwer werwerwer werwerwer efrgfeg3fgg rgrgfwefgg werwefwee werfwerwer etrhojsldf'
-    }
-  }
-}
