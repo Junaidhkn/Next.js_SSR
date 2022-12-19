@@ -1,5 +1,5 @@
 export const getAllEvents = async () => {
-   const response = await fetch( 'https://nextjs-project-pre-rendering-default-rtdb.asia-southeast1.firebasedatabase.app/events' )
+   const response = await fetch( 'https://nextjs-project-pre-rendering-default-rtdb.asia-southeast1.firebasedatabase.app/events.json' )
 
    const data = await response.json()
 
